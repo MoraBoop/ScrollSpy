@@ -4,11 +4,24 @@
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
     <style>
     body {
         position: relative; 
+        
+    }
+    body,h2,h3,h4,h5 {
+        font-family: "Poppins", sans-serif
     }
     </style>
 </head>
@@ -108,22 +121,47 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum officia, aspernatur dolorem numquam vel delectus alias facere eaque quam placeat? Accusamus voluptatibus quos alias unde ducimus, provident commodi sit architecto.</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum officia, aspernatur dolorem numquam vel delectus alias facere eaque quam placeat? Accusamus voluptatibus quos alias unde ducimus, provident commodi sit architecto.</p>
     </div>
-    <div id="section3" class="container" style="padding-top:70px;padding-bottom:70px">
-        <h1>Section 3</h1>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum officia, aspernatur dolorem numquam vel delectus alias facere eaque quam placeat? Accusamus voluptatibus quos alias unde ducimus, provident commodi sit architecto.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum officia, aspernatur dolorem numquam vel delectus alias facere eaque quam placeat? Accusamus voluptatibus quos alias unde ducimus, provident commodi sit architecto.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum officia, aspernatur dolorem numquam vel delectus alias facere eaque quam placeat? Accusamus voluptatibus quos alias unde ducimus, provident commodi sit architecto.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum officia, aspernatur dolorem numquam vel delectus alias facere eaque quam placeat? Accusamus voluptatibus quos alias unde ducimus, provident commodi sit architecto.</p>
+
+    <!--CONTACTO-->
+    <div id="section3" class="container grid-container" style="padding-top:70px;padding-bottom:70px">
+        
+        <h2>Contact Me </h2>
+
+        <div class="item1 w3-card-4" style="padding: 5%">
+            <p>
+                <i class="fas fa-envelope w3-xlarge w3-text-cyan"></i><span class="w3-opacity"><b> Mail:</b></span>
+                <br><span>jasonmoramora@outlook.com</span>
+            </p>
+            <p>
+                <i class="fas fa-phone-square w3-xlarge w3-text-green"></i><span class="w3-opacity"><b> Telefonos:</b></span>
+                <br><span>433-1310</span>
+                <br><span>914491152</span>
+            </p> 
+            <p>        
+                <i class="fas fa-map-marker-alt w3-xlarge w3-text-red"></i><span class="w3-opacity"><b> Ubicacion:</b></span>
+                <br><span>Lima, Breña</span>
+            </p>
+            
+
+            <p class="w3-opacity">Redes Sociales</p>            
+            <a href="https://www.facebook.com/Jaison-Mora-547396385614913" target="_blank"><i class="fab fa-facebook-square w3-xxxlarge w3-text-indigo"></i></a>
+            <a href="https://www.youtube.com/channel/UClpUfzMlZdnZJVlEEu5wE8w?view_as=subscriber" target="_blank"><i class="fab fa-youtube-square w3-xxxlarge w3-text-red w3-margin-left"></i></a>
+            <a href="https://github.com/moraboop" target="_blank"><i class="fab fa-github-square w3-xxxlarge w3-text-black w3-margin-left"></i></a>
+        </div>
+
+        <div class="item2 w3-card-4" style="padding: 0px; margin: 0px;">
+            <img src="lima.jpg" alt="Lima" style="width: 100%; height: auto;">  
+        </div>
+        
     </div>
+    
 
 
-    <div id="googleMap" style="width:100%;height:400px;"></div>
+    <div id="googleMap" style="width:100%;height:300px;"></div>
     <script>
         function myMap() {
         var mapProp= {
-            center:new google.maps.LatLng(51.508742,-0.120850),
+            center:new google.maps.LatLng(-12.046474, -77.042721),
             zoom:5,
         };
         var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
